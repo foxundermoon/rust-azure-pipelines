@@ -1,6 +1,6 @@
 parameters:
   dependsOn: []
-  rust_version: stable
+  rust_version: nightly
   displayName: 'Deploy master API doc to Github'
   branch: master
 

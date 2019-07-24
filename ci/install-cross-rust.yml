@@ -1,6 +1,6 @@
 # defaults for any parameters that aren't specified
 parameters:
-        rust_version: stable
+        rust_version: nightly
 
 steps:
   # Linux and macOS.

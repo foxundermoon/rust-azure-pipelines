@@ -1,7 +1,7 @@
 # SUPPORTED TARGETS https://github.com/rust-embedded/cross#supported-targets
 
 parameters:
-  rust_version: stable
+  rust_version: nightly
   check_target: []
   test_targets: []
 

@@ -1,5 +1,5 @@
 parameters:
-  rust_version: stable
+  rust_version: nightly
 
 jobs:
 - job: ${{ parameters.name }}

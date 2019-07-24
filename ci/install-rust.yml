@@ -30,8 +30,9 @@ steps:
 
   - script: |
       set -e
-      rustup toolchain add $RUSTUP_TOOLCHAIN
-      rustup default $RUSTUP_TOOLCHAIN
+      rustup toolchain add nightly
+      rustup default nightly
+      echo "rustup toolchain add $RUSTUP_TOOLCHAIN"
     env:
       RUSTUP_TOOLCHAIN: ${{parameters.rust_version}}
     displayName: add nightly toolchain

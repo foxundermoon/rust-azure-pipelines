@@ -28,6 +28,14 @@ steps:
   - ${{ each component in parameters.components }}:
           - script: rustup component add ${{ component }}
 
+  - script: |
+      set -e
+      rustup toolchain add $RUSTUP_TOOLCHAIN
+      rustup default $RUSTUP_TOOLCHAIN
+    env:
+      RUSTUP_TOOLCHAIN: ${{parameters.rust_version}}
+    displayName: add nightly toolchain
+
   # All platforms.
   - script: |
         rustup -V
